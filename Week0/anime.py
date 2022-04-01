@@ -22,19 +22,15 @@ def anime_print(position):
     print(os + "    oo    oo  'oo OOOO-| oo\\_ ")
     print(os + '+--+--+--+--+--+--+--+--+-+-+--+--+--+--+')
 
-# Pattern function for the non-animated(static) pattern
-def staticanime():
-  pattern_print(0)
-
-# Pattern function for drawing the animated pattern
+# Pattern function for animation
 def animefunc():
 
     # Animation Variables
     start = 0  # Start with no offset
-    distance = 40  # Number of loops
+    distance = 39  # Number of loops
     step = 1  # Step amount
 
-    # Loop to move the train to the right
+    # Loop in order to add animation to the train
     for position in range(start, distance, step):
         anime_print(position)  
         time.sleep(.1)

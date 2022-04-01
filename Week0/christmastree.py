@@ -6,7 +6,7 @@ def tree(n):
             print('*',end=' ')
         print()
 
-# Generating Pole Shape
+# Creating the Pole
 def bottom(n):
     for x in range(3):
         for i in range(n-1):
