@@ -3,18 +3,17 @@ import time
 # terminal print commands
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
-OCEAN_COLOR = u"\u001B[44m\u001B[2D"
-MAGENTA_COLOR = u"\u001b[35;1m"
-COMP_COLOR = u"\u001B[0m\u001B[2D"
+RED_COLOR = u"\u001b[34m"
+TRAIN_COLOR = u"\u001b[34m"
 
 
 
-# print computer moving across screen
+# print a train moving across screen
 def anime_print(position):
     print(ANSI_CLEAR_SCREEN)
     print(ANSI_HOME_CURSOR)
     os = " " * position
-    print(MAGENTA_COLOR)
+    print(RED_COLOR)
     print(os + "    ....")
     print(os + "      . . . . o o o o o")
     print(os + '              _____      o')
@@ -32,10 +31,10 @@ def animefunc():
 
     # Animation Variables
     start = 0  # Start with no offset
-    distance = 50  # Number of loops
+    distance = 40  # Number of loops
     step = 1  # Step amount
 
-    # Loop to move the computer to the right
+    # Loop to move the train to the right
     for position in range(start, distance, step):
         anime_print(position)  
         time.sleep(.1)

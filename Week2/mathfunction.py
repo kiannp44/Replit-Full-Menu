@@ -1,8 +1,8 @@
 # Factorial of a number using recursion
 from numpy import kaiser
 
-MAGENTA_COLOR = u"\u001b[35;1m"
-COMP_COLOR = u"\u001B[0m\u001B[2D"
+RED_COLOR = u"\u001b[34m"
+TRAIN_COLOR = u"\u001b[34mD"
 
 def recur_factorial(n):
     if n == 1 or n == 0:
@@ -48,12 +48,12 @@ def fibonacci_tester():
     else:
       try:
         result = fibonacci(num)
-        print(MAGENTA_COLOR)
+        print(RED_COLOR)
         print("The result of fibonacci", num, "times is", result)
-        print(COMP_COLOR)
+        print(TRAIN_COLOR)
       except:
         print("Error - Invalid Input")
-        print(COMP_COLOR)
+        print(TRAIN_COLOR)
 
 def recur_fibonacci_tester():
   num = int(input("Enter a number for fibonacci: "))
@@ -63,7 +63,7 @@ def recur_fibonacci_tester():
   else:
     try:
         result = recur_fibonacci(0, num, 0, 1)
-        print(MAGENTA_COLOR)
+        print(RED_COLOR)
         print("The result of fibonacci", num, "times is", result)
         print(COMP_COLOR)
     except:
@@ -79,9 +79,9 @@ def factorial_tester():
     if num < 0:
         print("Sorry, factorial does not exist for negative numbers")
     else:
-        print(MAGENTA_COLOR)
+        print(RED_COLOR)
         print("The factorial of", num, "is", recur_factorial(num))
-        print(COMP_COLOR)
+        print(TRAIN_COLOR)
 
 # this only applies if the file is run as main
 if __name__ == "__main__":

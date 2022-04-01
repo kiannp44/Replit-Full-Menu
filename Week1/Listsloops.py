@@ -27,7 +27,7 @@ InfoDb.append({
                "FirstName": "Ben",  
                "LastName": "Shamloufard",  
                "Residence": "San Diego",  
-               "Owns_Shoes":["Vans","Nike", "Puma"]
+               "Owns_Shoes":["Vans","Nike","Puma"]
               })  
 
 InfoDb.append({  
@@ -37,6 +37,18 @@ InfoDb.append({
                "Owns_Shoes":["Converse","Reebok", "Nike", "Vans"]
               })  
 
+InfoDb.append({  
+               "FirstName": "Daniel",  
+               "LastName": "Bertino",  
+               "Residence": "San Diego",
+               "DOB": "March 14",
+               "Age": "18",
+               "Sports": ["Basketball","Soccer"],
+               "Fav_Food": "Pizza",
+               "School": "DNHS",
+               "Subjects": ["cs","stats","literature","econ"],
+               "Owns_Shoes":["Addidas","Puma","Vans"]
+              })  
 
 def print_data(n):
     print(InfoDb[n]["FirstName"], InfoDb[n]["LastName"])  # using comma puts space between values
