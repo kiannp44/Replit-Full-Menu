@@ -12,7 +12,7 @@
 # from wipy import funcy
 # from wipy import prefuncy
 # Week 0 Imports
-from Week0 import swap, matrix, anime
+from Week0 import swap, matrix, anime, cokefunc
 import os
 # Week 1 imports
 from Week1 import fibonacci, Listsloops
@@ -29,6 +29,7 @@ main_menu = [
 visual_sub_menu = [
     ["Animation", anime.animefunc],
     ["Matrix", matrix.matrix_tester],
+    ["Coke", cokefunc.cokefunc],
 ]
 
 math_sub_menu = [
