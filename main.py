@@ -15,9 +15,9 @@
 from Week0 import swap, matrix, anime, cokefunc
 import os
 # Week 1 imports
-from Week1 import fibonacci, Listsloops
+from Week1 import  Listsloops
 # Week 2 imports
-from Week2 import mathfunction, palindrome, factorial, math
+from Week2 import mathfunction, palindrome, factorial, math, calc
 
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
@@ -37,7 +37,8 @@ math_sub_menu = [
     ["Fibonacci", mathfunction.fibonacci_tester],
     ["Recursive Fibonacci", mathfunction.recur_fibonacci_tester],
     ["Recursive Factorial", mathfunction.factorial_tester],
-    ["Least Common Multiple", factorial.lcm_run]
+    ["Least Common Multiple", factorial.lcm_run],
+    ["Calculator",calc.do_calc]
 ]
 
 oop_sub_menu = [
