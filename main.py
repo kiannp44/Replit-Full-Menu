@@ -17,7 +17,7 @@ import os
 # Week 1 imports
 from Week1 import  Listsloops
 # Week 2 imports
-from Week2 import mathfunction, palindrome, factorial, math, calc
+from Week2 import mathfunction, palindrome, factorial, math, calc, bin
 
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
@@ -38,7 +38,8 @@ math_sub_menu = [
     ["Recursive Fibonacci", mathfunction.recur_fibonacci_tester],
     ["Recursive Factorial", mathfunction.factorial_tester],
     ["Least Common Multiple", factorial.lcm_run],
-    ["Calculator",calc.do_calc]
+    ["Calculator",calc.do_calc],
+    ["Binary",bin.do_binary]
 ]
 
 oop_sub_menu = [
